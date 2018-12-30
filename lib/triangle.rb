@@ -21,7 +21,7 @@ end
   end
     
     def kind
-      
+      is_triangle?
        
     if @side1 == @side2  && @side2  == @side3
       return :equilateral
