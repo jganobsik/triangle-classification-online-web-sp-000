@@ -11,7 +11,7 @@ class Triangle
 end
     
     def is_triangle?
-      if @side1 >= 0 == false || @side2 >= 0 == false || @side3 >= 0 == false
+      if @side1 > 0 == false || @side2 > 0 == false || @side3 > 0 == false
        
         raise TriangleError
       
