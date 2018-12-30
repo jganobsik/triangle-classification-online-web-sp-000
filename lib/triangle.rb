@@ -3,6 +3,9 @@ class Triangle
   attr_accessor :side1, :side2, :side3, :scalene, :isosceles, :equilateral 
   def initialize (l1,l2, l3)
     
+    if l1 <= 0 || l2 <= 0 || l3 <= 0 
+      
+    
     @side1 = l1
     @side2 = l2 
     @side3 = l3
