@@ -5,6 +5,8 @@ class Triangle
       return 'equilateral'
       elsif l1 == l2 || l2 == l3 || l1 == l3
       return 'isosceles'
+    else 
+      return 'scalene'
       
   end
     class TriangleError < StandardError
