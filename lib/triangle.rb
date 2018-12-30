@@ -10,6 +10,9 @@ class Triangle
     
 end
     
+    def is_triangle?
+      
+    
     def kind
       
        if @side1 >= 0 == false || @side2 >= 0 == false || @side3 >= 0 == false
