@@ -4,7 +4,11 @@ class Triangle
   def initialize (l1,l2, l3)
     
     if l1 <= 0 || l2 <= 0 || l3 <= 0 
-      
+       begin
+        raise TriangleError
+      rescue TriangleError => error
+          puts error.message
+      end
     
     @side1 = l1
     @side2 = l2 
