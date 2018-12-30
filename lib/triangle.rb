@@ -8,16 +8,16 @@ class Triangle
     @side2 = l2 
     @side3 = l3
     
+end
     
-     if @side1 >= 0 == false || @side2 >= 0 == false || @side3 >= 0 == false
+    def kind
+      
+       if @side1 >= 0 == false || @side2 >= 0 == false || @side3 >= 0 == false
        begin
         raise TriangleError
         rescue TriangleError
       end
     end
-end
-    
-    def kind
     if @side1 == @side2  && @side2  == @side3
       return :equilateral
       elsif @side1 == @side2  || @side2 == @side3 || @side1 == @side3
