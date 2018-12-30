@@ -12,11 +12,11 @@ end
     
     def is_triangle?
       if @side1 >= 0 == false || @side2 >= 0 == false || @side3 >= 0 == false
-       begin
+       
         raise TriangleError
         rescue TriangleError => error
        puts error.message
-      end
+      
     end
   end
     
