@@ -3,7 +3,8 @@ class Triangle
   def initialize (l1,l2, l3)
     if l1 == l2 && l2 == l3 
       return 'equilateral'
-      elsif 
+      elsif l1 == l2 || l2 == l3 || l1 == l3
+      return 'isosceles'
       
   end
     class TriangleError < StandardError
