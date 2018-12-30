@@ -11,17 +11,18 @@ class Triangle
 end
     
     def is_triangle?
-      
-    
-    def kind
-      
-       if @side1 >= 0 == false || @side2 >= 0 == false || @side3 >= 0 == false
+      if @side1 >= 0 == false || @side2 >= 0 == false || @side3 >= 0 == false
        begin
         raise TriangleError
         rescue TriangleError => error
        puts error.message
       end
     end
+  end
+    
+    def kind
+      
+       
     if @side1 == @side2  && @side2  == @side3
       return :equilateral
       elsif @side1 == @side2  || @side2 == @side3 || @side1 == @side3
