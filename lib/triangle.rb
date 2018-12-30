@@ -15,7 +15,8 @@ end
        if @side1 >= 0 == false || @side2 >= 0 == false || @side3 >= 0 == false
        begin
         raise TriangleError
-        rescue TriangleError
+        rescue TriangleError => error
+        error.message
       end
     end
     if @side1 == @side2  && @side2  == @side3
