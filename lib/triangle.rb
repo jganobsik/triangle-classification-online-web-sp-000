@@ -1,6 +1,6 @@
 class Triangle
   # write code here
-  attr_accessor :side1, :side2, :side3 
+  attr_accessor :side1, :side2, :side3, :scalene, :isosceles, :equilateral 
   def initialize (l1,l2, l3)
     
     @side1 = l1
@@ -10,11 +10,11 @@ end
     
     def kind
     if @side1 == @side2  && @side2  == @side3
-      return 'equilateral'
+      return :equilateral
       elsif @side1 == @side2  || @side2 == @side3 || @side1 == @side3
-      return 'isosceles'
+      return :isosceles
     else 
-      return 'scalene'
+      return :scalene
     end 
   end 
   
