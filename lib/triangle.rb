@@ -12,8 +12,9 @@ end
     
     def is_triangle?
       if @side1 > 0 == false || @side2 > 0 == false || @side3 > 0 == false
-       
         raise TriangleError
+      elsif @side1 > (@side2 + @side3) == true || @side2 > (@side1 + @side3) == true || @side3 > (@side1 + @side2) == true
+      raise TriangleError
       
     end
   end
