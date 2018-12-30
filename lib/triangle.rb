@@ -16,7 +16,7 @@ end
        begin
         raise TriangleError
         rescue TriangleError => error
-        error.message
+       puts error.message
       end
     end
     if @side1 == @side2  && @side2  == @side3
