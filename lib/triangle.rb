@@ -1,12 +1,17 @@
 class Triangle
   # write code here
+  attr_accessor :side1, :side2, :side3 
   def initialize (l1,l2, l3)
+    
+    @side1 = l1
+    @side2 = l2 
+    @side3 = l3
 end
     
-    def kind(l1,l2,l3)
-    if l1 == l2 && l2 == l3 
+    def kind
+    if @side1 == @side2  && @side2  == @side3
       return 'equilateral'
-      elsif l1 == l2 || l2 == l3 || l1 == l3
+      elsif @side1 == @side2  || @side2 == @side3 || @side1 == @side3
       return 'isosceles'
     else 
       return 'scalene'
