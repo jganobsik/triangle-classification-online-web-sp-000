@@ -9,6 +9,7 @@ class Triangle
       rescue TriangleError => error
           puts error.message
       end
+    end
     
     @side1 = l1
     @side2 = l2 
